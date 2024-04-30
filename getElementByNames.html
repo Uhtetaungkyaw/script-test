@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+         function getElements() {
+            var x=document.getElementsByName("myInupt");
+            alert(x.length + "elements!");
+         }
+    </script>
+
+
+    <input type="text" name="myInput" size="20"><br />
+
+    <input type="text" name="myInput" size="20"><br />
+
+    <input type="text" name="myInput" size="20"><br />
+
+    <input type="text" name="myInput" size="20"><br />
+
+    <input type="button" onclick="getElements()" value="How many elements named 'myInput'?">
+</body>
+
+</html>

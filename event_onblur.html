@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function upperCase() {
+            let x = document.getElementById('fname').value;
+            document.getElementById('fname').value='Uppercase -' + x.toUpperCase();
+        }
+
+        function lowerCase() {
+            let x = document.getElementById('lname').value;
+            document.getElementById('lname').value='Lowercase -' + x.toLowerCase();
+        }
+
+    </script>
+    <h3>Use tab  key after entering values into the fields</h3>
+    Enter your first name;
+    <input type="text" id="fname" onblur="upperCase()">
+    <br>Enter your last name:
+    <input type="text" id="lname" onblur="lowerCase()">
+</body>
+</html>

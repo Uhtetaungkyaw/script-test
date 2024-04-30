@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myMethod(x) {
+            console.log('mymethod is invoked with ', x);
+        }
+        //1.function object can be assigned to a variable
+        let my_function_var=myMethod;
+        //invoke the function
+        my_function_var('Function as a variable!');
+
+        //2.Function object can be  passed as an argument to another function
+        function yourMethod(x) {
+            x('Function as an argument!');
+        }
+        yourMethod(myMethod);
+
+        //3.Function object can be returned as a return value of a function 
+        function hisMethod() {
+            return myMethod;
+        }
+        var y=hisMethod();
+        //invoke the function
+        y('Function as a return value!');
+
+        
+    </script>   
+</body>
+</html>
